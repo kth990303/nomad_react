@@ -1,7 +1,12 @@
 import React from 'react';
 
 function Detail(props){
-    console.log(props.location.state);
+    console.log(props);
+    if(props.location.state===undefined){
+        alert('잘못된 접근입니다.');
+        props.history.push("/");
+        return null;
+    }
     const year=props.location.state.year;
     let flag;
     if(year<=2010){
