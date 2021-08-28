@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import Movie from '../components/movie';
+import "../components/movie.css"
 
 class Home extends React.Component{
   state={
@@ -23,11 +24,11 @@ class Home extends React.Component{
     return(
       <section className="container">
         {isLoading? (
-        <div class="loader">
-          <span class="loader__text_">Loading...</span>
+        <div className="loader">
+          <span className="loader__text_">Loading...</span>
         </div>
         ) : (
-          <div class="movie">
+          <div className="movie">
             <h1>Currently Most popular Movies List</h1>
             <hr></hr>
             {

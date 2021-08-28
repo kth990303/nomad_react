@@ -4,9 +4,9 @@ import "./movie.css"
 
 function Movie({year, title, summary, poster, genres}){
     return (
-        <div class="movie">
-            <h3 class="movie__title">{title}</h3>
-            <h5 class="movie__year">{year}</h5>
+        <div className="movie">
+            <h3 className="movie__title">{title}</h3>
+            <h5 className="movie__year">{year}</h5>
 
             <img src={poster} alt={title} title={title}></img>
 
@@ -14,7 +14,7 @@ function Movie({year, title, summary, poster, genres}){
                 <li key={idx} className="genres__genre">{genre}</li>
             )}</ul>
 
-            <p class="movie__summary">{summary}</p>            
+            <p className="movie__summary">{summary}</p>            
             <hr></hr>
         </div>
     )
