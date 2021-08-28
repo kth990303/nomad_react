@@ -1,5 +1,4 @@
 import React from "react";
-import "../components/movie.css"
 
 function About(){
     return <span>
